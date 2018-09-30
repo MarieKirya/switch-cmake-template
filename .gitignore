@@ -1,0 +1,17 @@
+# CMake
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+
+# Builds
+*.elf
+*.map
+*.nacp
+*.nso
+*.nro
+*.pfs0
+exefs
+
+# Packaging
+package_switch.sh
