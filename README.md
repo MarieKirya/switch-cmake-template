@@ -10,7 +10,7 @@ main repository and contribute back. It also is cleaner to use than the original
 switch template provided by devkitpro.
 
 To clarify this is purely for developers only and is not for end users. 
-*There will be no releases.*
+__There will be no releases.__
 
 To use
 ------
@@ -37,4 +37,4 @@ Please use GitHubs native issues and pull request functionality.
 
 Thanks to
 ---------
-DevKit Pro and libnx Devs for building these tools.
+DevKit Pro and libnx devs for building these tools.
