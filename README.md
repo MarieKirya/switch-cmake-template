@@ -30,6 +30,9 @@ can edit CMakeLists.txt. The places to edit are quite clear. Then you can simply
 `make` again and it will pick up on changes to CMakeLists.txt. If it doesn't, you 
 can delete CMakeCache.txt and rerun `./cmake_devkitA64.sh`
 
+__There are two targets currently__, most people won't need this so remove one you don't 
+need, either C or C++ one depending on your situation.
+
 Contributing and Bug Reporting
 ------------------------------
 

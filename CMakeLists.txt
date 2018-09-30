@@ -38,7 +38,7 @@ configure_file(
 
 set(ARCH "-march=armv8-a -mtune=cortex-a57 -mtp=soft -fPIE")
 set(NX_C_COMPILE_FLAGS "-g -Wall -O2 -ffunction-sections -D__SWITCH__ ${ARCH}")
-set(NX_CXX_COMPILE_FLAGS "${NX_C_COMPILE_FLAGS} -fno-rtti -fno-exceptions")
+set(NX_CXX_COMPILE_FLAGS "${NX_C_COMPILE_FLAGS} -std=c++17 -fno-rtti -fno-exceptions")
 set(NX_LINK_FLAGS "-specs=${LIBNX}/switch.specs -g ${ARCH} -Wl,-Map,${TARGET}.map")
 
 # Prevent CMake from assuming we're compiling for macOS and adding platform specific flags
@@ -67,3 +67,6 @@ link_directories("${PORTLIBS}/lib")
 
 add_executable("${TARGET}.elf" source/main.c)
 target_link_libraries("${TARGET}.elf" nx)
+
+add_executable("${TARGET}-cpp.elf" source/main.cpp)
+target_link_libraries("${TARGET}-cpp.elf" nx)
